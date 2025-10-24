@@ -11,6 +11,10 @@ defmodule Church.Congregant.Profile do
     create :create do
       accept [:first_name, :last_name]
     end
+
+    read :read do
+      primary? true
+    end
   end
 
   # Attributes Block
